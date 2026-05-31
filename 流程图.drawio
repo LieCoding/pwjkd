@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="RiVsw93TqDh1WeNNzW2_">
-    <mxGraphModel dx="1417" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2054" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -161,9 +161,6 @@
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-46" parent="ZyJUQWccHyl4WcuP0gCY-75" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="健康度评分（每开关）&lt;br&gt;基础分 = f(在线率, 遥控失败, 遥信、遥测)&lt;br&gt;总分 = 基础分 × 开关系数" vertex="1">
           <mxGeometry height="70" width="260" x="500" y="49" as="geometry" />
-        </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-88" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ZyJUQWccHyl4WcuP0gCY-47">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
