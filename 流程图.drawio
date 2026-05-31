@@ -153,10 +153,10 @@
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-44" parent="ZyJUQWccHyl4WcuP0gCY-75" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="按开关/终端融合数据" vertex="1">
           <mxGeometry height="60" width="160" x="43" y="54" as="geometry" />
         </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-45" parent="ZyJUQWccHyl4WcuP0gCY-75" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="获取开关系数K&lt;br&gt;自愈线路/分段/联络/高故障线路" vertex="1">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-45" parent="ZyJUQWccHyl4WcuP0gCY-75" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="获取开关系数&lt;br&gt;自愈线路/分段/联络/高故障线路" vertex="1">
           <mxGeometry height="60" width="200" x="260" y="54" as="geometry" />
         </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-46" parent="ZyJUQWccHyl4WcuP0gCY-75" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="健康度评分（每开关）&#xa;基础分 = f(在线率, 遥控失败, SOE)&#xa;总分 = 基础分 × K" vertex="1">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-46" parent="ZyJUQWccHyl4WcuP0gCY-75" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="健康度评分（每开关）&lt;br&gt;基础分 = f(在线率, 遥控失败, 遥信、遥测)&lt;br&gt;总分 = 基础分 × 开关系数" vertex="1">
           <mxGeometry height="70" width="260" x="500" y="49" as="geometry" />
         </mxCell>
       </root>
