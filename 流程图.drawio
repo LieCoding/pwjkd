@@ -58,8 +58,8 @@
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-50" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="结束" vertex="1">
           <mxGeometry height="40" width="60" x="686" y="786" as="geometry" />
         </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="输出异常数据&#xa;开关ID + 开关类型 + K值 + 各维度扣分" vertex="1">
-          <mxGeometry height="60" width="220" x="161" y="806" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="输出异常数据&lt;br&gt;开关ID + 开关类型 + 开关系数&amp;nbsp;+ 各维度扣分" vertex="1">
+          <mxGeometry height="60" width="289" x="240.5" y="820" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-52" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="智能体分析处置" vertex="1">
           <mxGeometry height="100" width="450" x="160" y="926" as="geometry" />
