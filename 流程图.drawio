@@ -46,7 +46,7 @@
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-14" parent="ZyJUQWccHyl4WcuP0gCY-12" style="rounded=0;whiteSpace=wrap;html=1;" value="结合告警模式推理" vertex="1">
           <mxGeometry height="40" width="120" x="160" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-15" parent="ZyJUQWccHyl4WcuP0gCY-12" style="rounded=0;whiteSpace=wrap;html=1;" value="生成差异化处置建议" vertex="1">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-15" parent="ZyJUQWccHyl4WcuP0gCY-12" style="rounded=0;whiteSpace=wrap;html=1;" value="生成处置建议" vertex="1">
           <mxGeometry height="40" width="140" x="300" y="40" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="输出异常开关清单 + 处置建议" vertex="1">
