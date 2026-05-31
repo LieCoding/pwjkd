@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="RiVsw93TqDh1WeNNzW2_">
-    <mxGraphModel dx="1174" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1417" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,10 +16,10 @@
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-31" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="数据接入" vertex="1">
           <mxGeometry height="130" width="400" x="361" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-32" parent="ZyJUQWccHyl4WcuP0gCY-31" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="OCS三区历史库&#xa;台账（厂家/投运时间）&#xa;运行（在线率/遥控失败）" vertex="1">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-32" parent="ZyJUQWccHyl4WcuP0gCY-31" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="OCS三区历史库&lt;br&gt;台账数据（厂家/投运时间）&lt;br&gt;运行数据（在线率/遥控失败）" vertex="1">
           <mxGeometry height="70" width="160" x="20" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-33" parent="ZyJUQWccHyl4WcuP0gCY-31" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="三区Kafka集群&#xa;断面遥信遥测&#xa;SOE问题信号" vertex="1">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-33" parent="ZyJUQWccHyl4WcuP0gCY-31" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="三区Kafka集群&lt;br&gt;断面遥信遥测&lt;br&gt;SOE信号&lt;div&gt;终端异常记录&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="160" x="210" y="40" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-34" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZyJUQWccHyl4WcuP0gCY-31">
