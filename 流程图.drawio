@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="RiVsw93TqDh1WeNNzW2_">
-    <mxGraphModel dx="2054" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2416" dy="1298" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,10 +8,10 @@
           <mxGeometry height="30" width="120" x="50" y="40" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="开始" vertex="1">
-          <mxGeometry height="40" width="80" x="470" y="40" as="geometry" />
+          <mxGeometry height="40" width="80" x="570" y="30" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-31" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="数据接入" vertex="1">
-          <mxGeometry height="130" width="400" x="310" y="110" as="geometry" />
+          <mxGeometry height="130" width="400" x="410" y="100" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-32" parent="ZyJUQWccHyl4WcuP0gCY-31" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="OCS三区历史库&#xa;台账（厂家/投运时间）&#xa;运行（在线率/遥控失败）" vertex="1">
           <mxGeometry height="70" width="160" x="20" y="40" as="geometry" />
@@ -28,8 +28,8 @@
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-36" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="基础数据存储" vertex="1">
           <mxGeometry height="180" width="800" x="210" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-37" parent="ZyJUQWccHyl4WcuP0gCY-36" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="终端台账表&#xa;设备ID/厂家/投运时间/类型" vertex="1">
-          <mxGeometry height="60" width="160" x="20" y="50" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-37" parent="ZyJUQWccHyl4WcuP0gCY-36" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="终端台账表&lt;br&gt;设备GISID/厂家/投运时间/类型" vertex="1">
+          <mxGeometry height="60" width="170" x="20" y="50" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-38" parent="ZyJUQWccHyl4WcuP0gCY-36" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="运行数据表&#xa;在线率/遥控失败次数/SOE" vertex="1">
           <mxGeometry height="60" width="160" x="210" y="50" as="geometry" />
@@ -47,28 +47,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-43" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="计算处理层" vertex="1">
-          <mxGeometry height="30" width="120" x="50" y="500" as="geometry" />
-        </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="按开关/终端融合数据" vertex="1">
-          <mxGeometry height="50" width="160" x="430" y="490" as="geometry" />
-        </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="获取开关系数K&#xa;自愈线路/分段/联络/频繁跳闸 → 高K" vertex="1">
-          <mxGeometry height="60" width="200" x="410" y="570" as="geometry" />
-        </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="健康度评分（每开关）&#xa;基础分 = f(在线率, 遥控失败, SOE)&#xa;总分 = 基础分 × K" vertex="1">
-          <mxGeometry height="70" width="260" x="380" y="660" as="geometry" />
+          <mxGeometry height="30" width="120" x="80" y="500" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-47" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="总分 &lt; 合理阈值?" vertex="1">
           <mxGeometry height="80" width="140" x="440" y="760" as="geometry" />
         </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-48" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;" target="ZyJUQWccHyl4WcuP0gCY-44">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-48" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ZyJUQWccHyl4WcuP0gCY-75">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="正常，不输出异常" vertex="1">
           <mxGeometry height="50" width="130" x="650" y="775" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-50" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="结束" vertex="1">
-          <mxGeometry height="40" width="60" x="685" y="870" as="geometry" />
+          <mxGeometry height="40" width="60" x="685" y="860" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="输出异常数据&#xa;开关ID + 开关类型 + K值 + 各维度扣分" vertex="1">
           <mxGeometry height="60" width="220" x="160" y="880" as="geometry" />
@@ -131,8 +122,10 @@
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-69" parent="ZyJUQWccHyl4WcuP0gCY-66" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;" value="💡 智能体建议输出&#xa;· 处置建议&#xa;· 历史案例参考" vertex="1">
           <mxGeometry height="70" width="250" x="25" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="ZyJUQWccHyl4WcuP0gCY-70" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="ZyJUQWccHyl4WcuP0gCY-67" value="读取评分数据">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-70" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ZyJUQWccHyl4WcuP0gCY-67" value="读取评分数据">
+          <mxGeometry relative="1" x="0.0755" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-71" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;" target="ZyJUQWccHyl4WcuP0gCY-68" value="读取异常记录">
           <mxGeometry relative="1" x="-0.4" y="10" as="geometry">
@@ -144,6 +137,18 @@
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-72" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;" target="ZyJUQWccHyl4WcuP0gCY-69" value="建议结果">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-75" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="展示功能" vertex="1">
+          <mxGeometry height="250" width="300" x="210" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-44" parent="ZyJUQWccHyl4WcuP0gCY-75" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="按开关/终端融合数据" vertex="1">
+          <mxGeometry height="50" width="160" x="70" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-45" parent="ZyJUQWccHyl4WcuP0gCY-75" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="获取开关系数K&#xa;自愈线路/分段/联络/频繁跳闸 → 高K" vertex="1">
+          <mxGeometry height="60" width="200" x="50" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-46" parent="ZyJUQWccHyl4WcuP0gCY-75" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="健康度评分（每开关）&#xa;基础分 = f(在线率, 遥控失败, SOE)&#xa;总分 = 基础分 × K" vertex="1">
+          <mxGeometry height="70" width="260" x="20" y="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
