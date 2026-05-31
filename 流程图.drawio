@@ -1,177 +1,150 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="开关健康度评估系统（含存储与展示）" id="switch-health-full">
-    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1300" math="0" shadow="0">
+  <diagram name="第 1 页" id="RiVsw93TqDh1WeNNzW2_">
+    <mxGraphModel dx="2054" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-
-        <!-- ========== 1. 数据接入层 ========== -->
-        <mxCell id="title1" value="数据接入层" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="40" y="20" width="120" height="30" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-29" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="数据接入层" vertex="1">
+          <mxGeometry height="30" width="120" x="50" y="40" as="geometry" />
         </mxCell>
-
-        <mxCell id="start" value="开始" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry height="40" width="80" x="460" y="20" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="开始" vertex="1">
+          <mxGeometry height="40" width="80" x="470" y="40" as="geometry" />
         </mxCell>
-
-        <mxCell id="dataAccess" value="数据接入" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry height="130" width="400" x="300" y="90" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-31" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="数据接入" vertex="1">
+          <mxGeometry height="130" width="400" x="310" y="110" as="geometry" />
         </mxCell>
-        <mxCell id="ocsDB" value="OCS三区历史库&#xa;台账（厂家/投运时间）&#xa;运行（在线率/遥控失败）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="dataAccess">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-32" parent="ZyJUQWccHyl4WcuP0gCY-31" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="OCS三区历史库&#xa;台账（厂家/投运时间）&#xa;运行（在线率/遥控失败）" vertex="1">
           <mxGeometry height="70" width="160" x="20" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="kafka" value="三区Kafka集群&#xa;断面遥信遥测&#xa;SOE问题信号" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="dataAccess">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-33" parent="ZyJUQWccHyl4WcuP0gCY-31" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="三区Kafka集群&#xa;断面遥信遥测&#xa;SOE问题信号" vertex="1">
           <mxGeometry height="70" width="160" x="210" y="40" as="geometry" />
         </mxCell>
-
-        <mxCell id="edgeStart" edge="1" parent="1" source="start" target="dataAccess" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-34" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZyJUQWccHyl4WcuP0gCY-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- ========== 2. 基础数据存储层 ========== -->
-        <mxCell id="title2" value="基础数据存储层" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="40" y="260" width="140" height="30" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-35" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="基础数据存储层" vertex="1">
+          <mxGeometry height="30" width="140" x="50" y="280" as="geometry" />
         </mxCell>
-
-        <mxCell id="storage" value="基础数据存储" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry height="180" width="800" x="200" y="250" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-36" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="基础数据存储" vertex="1">
+          <mxGeometry height="180" width="800" x="210" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="store1" value="终端台账表&#xa;设备ID/厂家/投运时间/类型" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="storage">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-37" parent="ZyJUQWccHyl4WcuP0gCY-36" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="终端台账表&#xa;设备ID/厂家/投运时间/类型" vertex="1">
           <mxGeometry height="60" width="160" x="20" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="store2" value="运行数据表&#xa;在线率/遥控失败次数/SOE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="storage">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-38" parent="ZyJUQWccHyl4WcuP0gCY-36" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="运行数据表&#xa;在线率/遥控失败次数/SOE" vertex="1">
           <mxGeometry height="60" width="160" x="210" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="store3" value="健康度评分表&#xa;各开关得分/等级/扣分明细" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="storage">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-39" parent="ZyJUQWccHyl4WcuP0gCY-36" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="健康度评分表&#xa;各开关得分/等级/扣分明细" vertex="1">
           <mxGeometry height="60" width="180" x="400" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="store4" value="异常记录表&#xa;异常开关/K值/判定时间" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="storage">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-40" parent="ZyJUQWccHyl4WcuP0gCY-36" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="异常记录表&#xa;异常开关/K值/判定时间" vertex="1">
           <mxGeometry height="60" width="180" x="610" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="storeNote" value="存储目标：MySQL / PostgreSQL / 时序数据库" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="storage">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-41" parent="ZyJUQWccHyl4WcuP0gCY-36" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" value="存储目标：达梦数据库" vertex="1">
           <mxGeometry height="20" width="300" x="250" y="130" as="geometry" />
         </mxCell>
-
-        <mxCell id="edgeToStore" edge="1" parent="1" source="dataAccess" target="storage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-42" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;" target="ZyJUQWccHyl4WcuP0gCY-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- ========== 3. 计算处理层 ========== -->
-        <mxCell id="title3" value="计算处理层" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="40" y="480" width="120" height="30" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-43" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="计算处理层" vertex="1">
+          <mxGeometry height="30" width="120" x="50" y="500" as="geometry" />
         </mxCell>
-
-        <mxCell id="fusion" value="按开关/终端融合数据" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry height="50" width="160" x="420" y="470" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="按开关/终端融合数据" vertex="1">
+          <mxGeometry height="50" width="160" x="430" y="490" as="geometry" />
         </mxCell>
-
-        <mxCell id="coefficient" value="获取开关系数K&#xa;自愈线路/分段/联络/频繁跳闸 → 高K" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry height="60" width="200" x="400" y="550" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="获取开关系数K&#xa;自愈线路/分段/联络/频繁跳闸 → 高K" vertex="1">
+          <mxGeometry height="60" width="200" x="410" y="570" as="geometry" />
         </mxCell>
-
-        <mxCell id="score" value="健康度评分（每开关）&#xa;基础分 = f(在线率, 遥控失败, SOE)&#xa;总分 = 基础分 × K" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry height="70" width="260" x="370" y="640" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="健康度评分（每开关）&#xa;基础分 = f(在线率, 遥控失败, SOE)&#xa;总分 = 基础分 × K" vertex="1">
+          <mxGeometry height="70" width="260" x="380" y="660" as="geometry" />
         </mxCell>
-
-        <mxCell id="decision" value="总分 &lt; 合理阈值?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry height="80" width="140" x="430" y="740" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-47" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="总分 &lt; 合理阈值?" vertex="1">
+          <mxGeometry height="80" width="140" x="440" y="760" as="geometry" />
         </mxCell>
-
-        <!-- 连线：存储 → 融合 -->
-        <mxCell id="edgeStore2Fusion" edge="1" parent="1" source="storage" target="fusion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-48" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;" target="ZyJUQWccHyl4WcuP0gCY-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- ========== 4. 异常处理与智能体 ========== -->
-        <mxCell id="normal" value="正常，不输出异常" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry height="50" width="130" x="640" y="755" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="正常，不输出异常" vertex="1">
+          <mxGeometry height="50" width="130" x="650" y="775" as="geometry" />
         </mxCell>
-        <mxCell id="endNormal" value="结束" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry height="40" width="60" x="675" y="850" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-50" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="结束" vertex="1">
+          <mxGeometry height="40" width="60" x="685" y="870" as="geometry" />
         </mxCell>
-
-        <mxCell id="abnormal" value="输出异常数据&#xa;开关ID + 开关类型 + K值 + 各维度扣分" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry height="60" width="220" x="150" y="860" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="输出异常数据&#xa;开关ID + 开关类型 + K值 + 各维度扣分" vertex="1">
+          <mxGeometry height="60" width="220" x="160" y="880" as="geometry" />
         </mxCell>
-
-        <mxCell id="agent" value="智能体分析处置" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry height="130" width="460" x="150" y="960" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-52" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="智能体分析处置" vertex="1">
+          <mxGeometry height="130" width="460" x="160" y="980" as="geometry" />
         </mxCell>
-        <mxCell id="agent1" value="匹配高K开关历史案例" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="agent">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-53" parent="ZyJUQWccHyl4WcuP0gCY-52" style="rounded=0;whiteSpace=wrap;html=1;" value="匹配高K开关历史案例" vertex="1">
           <mxGeometry height="40" width="120" x="20" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="agent2" value="结合告警模式推理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="agent">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-54" parent="ZyJUQWccHyl4WcuP0gCY-52" style="rounded=0;whiteSpace=wrap;html=1;" value="结合告警模式推理" vertex="1">
           <mxGeometry height="40" width="120" x="160" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="agent3" value="生成处置建议" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="agent">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-55" parent="ZyJUQWccHyl4WcuP0gCY-52" style="rounded=0;whiteSpace=wrap;html=1;" value="生成处置建议" vertex="1">
           <mxGeometry height="40" width="140" x="300" y="40" as="geometry" />
         </mxCell>
-
-        <mxCell id="finalOutput" value="输出异常开关清单 + 处置建议" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry height="50" width="240" x="260" y="1130" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="输出异常开关清单 + 处置建议" vertex="1">
+          <mxGeometry height="50" width="240" x="270" y="1150" as="geometry" />
         </mxCell>
-        <mxCell id="endFinal" value="结束" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry height="40" width="60" x="350" y="1210" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-57" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="结束" vertex="1">
+          <mxGeometry height="40" width="60" x="360" y="1230" as="geometry" />
         </mxCell>
-
-        <!-- 判断分支 -->
-        <mxCell id="edgeYes" edge="1" parent="1" source="decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;fontColor=#b85450;" target="abnormal" value="是（异常）">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-58" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;fontColor=#b85450;" target="ZyJUQWccHyl4WcuP0gCY-51" value="是（异常）">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="260" y="780" as="targetPoint" />
+            <mxPoint x="270" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="edgeNo" edge="1" parent="1" source="decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;fontColor=#82b366;" target="normal" value="否（正常）">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-59" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;fontColor=#82b366;" target="ZyJUQWccHyl4WcuP0gCY-49" value="否（正常）">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edgeNormalEnd" edge="1" parent="1" source="normal" target="endNormal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-60" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZyJUQWccHyl4WcuP0gCY-50">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edgeAbnormal2Agent" edge="1" parent="1" source="abnormal" target="agent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-61" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZyJUQWccHyl4WcuP0gCY-52">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edgeAgent2Output" edge="1" parent="1" source="agent" target="finalOutput" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-62" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZyJUQWccHyl4WcuP0gCY-56">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edgeOutput2End" edge="1" parent="1" source="finalOutput" target="endFinal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-63" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZyJUQWccHyl4WcuP0gCY-57">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- 存储回写：异常记录写入存储 -->
-        <mxCell id="edgeWriteBack" edge="1" parent="1" source="abnormal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeDashPattern=8 4;fontColor=#9673a6;" target="store4" value="写入异常记录">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-64" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeDashPattern=8 4;fontColor=#9673a6;" target="ZyJUQWccHyl4WcuP0gCY-40" value="写入异常记录">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="610" y="890" as="targetPoint" />
+            <mxPoint x="620" y="910" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <!-- ========== 5. 展示层（新增） ========== -->
-        <mxCell id="title4" value="展示层" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="880" y="480" width="80" height="30" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-65" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="展示层" vertex="1">
+          <mxGeometry height="30" width="80" x="1250" y="510" as="geometry" />
         </mxCell>
-
-        <mxCell id="display" value="展示功能" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry height="280" width="300" x="880" y="520" as="geometry" />
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-66" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" value="展示功能" vertex="1">
+          <mxGeometry height="280" width="300" x="1020" y="545" as="geometry" />
         </mxCell>
-        <mxCell id="dashboard" value="📊 健康度看板&#xa;· 总分排行&#xa;· 异常率趋势" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;" vertex="1" parent="display">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-67" parent="ZyJUQWccHyl4WcuP0gCY-66" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;" value="📊 健康度看板&#xa;· 总分排行&#xa;· 异常率趋势" vertex="1">
           <mxGeometry height="70" width="250" x="25" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="anomalyList" value="⚠️ 异常清单表&#xa;· 低分开关列表&#xa;· 各维度扣分明细" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;" vertex="1" parent="display">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-68" parent="ZyJUQWccHyl4WcuP0gCY-66" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;" value="⚠️ 异常清单表&#xa;· 低分开关列表&#xa;· 各维度扣分明细" vertex="1">
           <mxGeometry height="70" width="250" x="25" y="115" as="geometry" />
         </mxCell>
-        <mxCell id="suggestDisplay" value="💡 智能体建议输出&#xa;· 处置建议&#xa;· 历史案例参考" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;" vertex="1" parent="display">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-69" parent="ZyJUQWccHyl4WcuP0gCY-66" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;" value="💡 智能体建议输出&#xa;· 处置建议&#xa;· 历史案例参考" vertex="1">
           <mxGeometry height="70" width="250" x="25" y="200" as="geometry" />
         </mxCell>
-
-        <!-- 存储 → 展示 连线 -->
-        <mxCell id="edgeStore2Display" edge="1" parent="1" source="store3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;" target="dashboard" value="读取评分数据">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-70" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="ZyJUQWccHyl4WcuP0gCY-67" value="读取评分数据">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edgeStore2Display2" edge="1" parent="1" source="store4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;" target="anomalyList" value="读取异常记录">
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-71" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;" target="ZyJUQWccHyl4WcuP0gCY-68" value="读取异常记录">
+          <mxGeometry relative="1" x="-0.4" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="960" y="695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZyJUQWccHyl4WcuP0gCY-72" edge="1" parent="1" source="ZyJUQWccHyl4WcuP0gCY-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;" target="ZyJUQWccHyl4WcuP0gCY-69" value="建议结果">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edgeAgent2Display" edge="1" parent="1" source="agent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;" target="suggestDisplay" value="建议结果">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
       </root>
     </mxGraphModel>
   </diagram>
