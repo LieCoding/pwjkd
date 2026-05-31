@@ -56,10 +56,10 @@
           <mxGeometry height="80" width="140" x="235.5" y="661" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-151" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="正常，不输出异常" vertex="1">
-          <mxGeometry height="50" width="130" x="481" y="656" as="geometry" />
+          <mxGeometry height="50" width="130" x="481" y="676" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-152" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="结束" vertex="1">
-          <mxGeometry height="40" width="60" x="650" y="661" as="geometry" />
+          <mxGeometry height="40" width="60" x="650" y="681" as="geometry" />
         </mxCell>
         <mxCell id="ZyJUQWccHyl4WcuP0gCY-153" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="输出异常数据&lt;br&gt;开关ID + 开关类型 + 开关系数&amp;nbsp;+ 各维度扣分" vertex="1">
           <mxGeometry height="60" width="289" x="161" y="780" as="geometry" />
