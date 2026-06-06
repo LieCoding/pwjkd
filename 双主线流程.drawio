@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="开关健康度评估系统" id="AAI1UVjUyZYLxQUxNIa7">
-    <mxGraphModel dx="1366" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1147" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -247,8 +247,8 @@
         <mxCell id="fG70DyH517ywJ7fTxMFy-78" parent="fG70DyH517ywJ7fTxMFy-74" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" value="按线路/区域/厂家统计 / 优化建议" vertex="1">
           <mxGeometry height="40" width="180" x="230" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="fG70DyH517ywJ7fTxMFy-79" parent="fG70DyH517ywJ7fTxMFy-64" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="闭环管理" vertex="1">
-          <mxGeometry height="50" width="430" x="880" y="130" as="geometry" />
+        <mxCell id="fG70DyH517ywJ7fTxMFy-79" parent="fG70DyH517ywJ7fTxMFy-74" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="闭环管理" vertex="1">
+          <mxGeometry height="50" width="430" y="130" as="geometry" />
         </mxCell>
         <mxCell id="fG70DyH517ywJ7fTxMFy-80" parent="fG70DyH517ywJ7fTxMFy-64" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="跟踪OMS缺陷单处置状态 → 处置结果回写 → 反馈至人工智能平台（模型优化）" vertex="1">
           <mxGeometry height="30" width="430" x="880" y="185" as="geometry" />
