@@ -1,337 +1,357 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="24.7.17">
-  <diagram name="配网自动化智能诊断云脑应用" id="cloud-brain-flow">
-    <mxGraphModel dx="1712" dy="919" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+  <diagram name="配网自动化智能诊断云脑-双主线流程" id="dual-main-flow">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         
         <!-- 标题 -->
-        <mxCell id="title" value="配网自动化智能诊断云脑应用 —— 建设流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="300" y="10" width="500" height="40" as="geometry" />
+        <mxCell id="title" value="配网自动化智能诊断云脑 —— 双主线功能流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="10" width="500" height="40" as="geometry" />
         </mxCell>
 
-        <!-- ==================== 第一阶段：数据接入层 ==================== -->
+        <!-- ==================== 主线一：运行数据驱动 ==================== -->
         
-        <!-- 运行数据（OCS） -->
-        <mxCell id="swim-ocs" value="运行数据（OCS调度自动化系统）" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="30" y="70" width="360" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ocs-1" value="遥信/遥测信号" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="swim-ocs">
-          <mxGeometry x="20" y="40" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ocs-2" value="远程电池活化信号" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="swim-ocs">
-          <mxGeometry x="190" y="40" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ocs-3" value="定值压板信号" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="swim-ocs">
-          <mxGeometry x="20" y="85" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ocs-4" value="终端在线状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="swim-ocs">
-          <mxGeometry x="190" y="85" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ocs-5" value="遥控操作记录" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="swim-ocs">
-          <mxGeometry x="20" y="130" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ocs-6" value="信号误发/数据异常" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="swim-ocs">
-          <mxGeometry x="190" y="130" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ocs-7" value="SOE事件顺序记录" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="swim-ocs">
-          <mxGeometry x="100" y="170" width="140" height="30" as="geometry" />
+        <!-- 主线一标题 -->
+        <mxCell id="main1-title" value="【主线一】运行数据驱动流程" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="30" y="60" width="650" height="560" as="geometry" />
         </mxCell>
 
-        <!-- 故障/缺陷数据（OCS+OMS+配网供电能力） -->
-        <mxCell id="swim-fault" value="故障/缺陷数据（OCS + OMS + 配网供电能力分析系统）" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="420" y="70" width="380" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="data-fault-1" value="OCS：开关自身故障记录" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="swim-fault">
-          <mxGeometry x="20" y="40" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-fault-2" value="OMS：缺陷工单/检修记录/跳闸" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="swim-fault">
-          <mxGeometry x="200" y="40" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-fault-3" value="配网供电能力：自愈线路标识" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="swim-fault">
-          <mxGeometry x="20" y="85" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-fault-4" value="配网供电能力：自愈故障信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="swim-fault">
-          <mxGeometry x="200" y="85" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-fault-5" value="高故障线路/关键联络标识" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="swim-fault">
-          <mxGeometry x="20" y="130" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-fault-6" value="供电能力受限关键开关" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="swim-fault">
-          <mxGeometry x="200" y="130" width="160" height="30" as="geometry" />
+        <!-- 数据来源标注 -->
+        <mxCell id="main1-source" value="数据来源：OCS调度自动化系统" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="main1-title">
+          <mxGeometry x="20" y="30" width="260" height="30" as="geometry" />
         </mxCell>
 
-        <!-- 智能体前置分析（自愈AI智能体） -->
-        <mxCell id="swim-ai-pre" value="智能体前置分析（配网自愈AI智能分析智能体）" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="830" y="70" width="340" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ai-1" value="可能存在问题的开关清单" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="swim-ai-pre">
-          <mxGeometry x="20" y="40" width="280" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ai-2" value="疑似问题类型（拒动/通讯延迟/定值不匹配）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="swim-ai-pre">
-          <mxGeometry x="20" y="85" width="280" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-ai-3" value="置信度评分 + 关联自愈故障事件ID" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="swim-ai-pre">
-          <mxGeometry x="20" y="130" width="280" height="30" as="geometry" />
+        <!-- 步骤1：数据采集 -->
+        <mxCell id="main1-step1" value="步骤1：数据采集" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="main1-title">
+          <mxGeometry x="20" y="70" width="610" height="200" as="geometry" />
         </mxCell>
 
-        <!-- 静态台账 -->
-        <mxCell id="swim-static" value="静态台账（OCS三区历史库）" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="30" y="300" width="1140" height="80" as="geometry" />
+        <!-- 1.1 实时运行数据 -->
+        <mxCell id="main1-1" value="1.1 实时运行数据采集" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="main1-step1">
+          <mxGeometry x="15" y="30" width="140" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="data-static-1" value="设备GISID / 厂家 / 型号" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="swim-static">
-          <mxGeometry x="30" y="35" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-static-2" value="投运日期 / 设计寿命" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="swim-static">
-          <mxGeometry x="260" y="35" width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-static-3" value="所属变电站 / 线路 / 区域" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="swim-static">
-          <mxGeometry x="470" y="35" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="data-static-4" value="责任单位" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="swim-static">
-          <mxGeometry x="700" y="35" width="150" height="30" as="geometry" />
+        <mxCell id="main1-1-out" value="在线率 / 遥信遥测 / 信号误发 / SOE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main1-step1">
+          <mxGeometry x="165" y="30" width="200" height="35" as="geometry" />
         </mxCell>
 
-        <!-- 数据融合箭头 -->
-        <mxCell id="arrow-ocs-merge" edge="1" parent="1" source="swim-ocs" target="merge-layer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;">
-          <mxGeometry relative="1" as="geometry" />
+        <!-- 1.2 每日遥控预置 -->
+        <mxCell id="main1-2" value="1.2 每日遥控预置检测" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="main1-step1">
+          <mxGeometry x="15" y="75" width="140" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="arrow-fault-merge" edge="1" parent="1" source="swim-fault" target="merge-layer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow-ai-merge" edge="1" parent="1" source="swim-ai-pre" target="merge-layer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.7;entryY=0;entryDx=0;entryDy=0;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow-static-merge" edge="1" parent="1" source="swim-static" target="merge-layer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="main1-2-out" value="预置成功率 / 连续失败次数" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main1-step1">
+          <mxGeometry x="165" y="75" width="200" height="35" as="geometry" />
         </mxCell>
 
-        <!-- ==================== 第二阶段：数据融合层 ==================== -->
-        <mxCell id="merge-layer" value="数据融合与清洗" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="30" y="420" width="1140" height="80" as="geometry" />
+        <!-- 1.3 定期电池活化 -->
+        <mxCell id="main1-3" value="1.3 定期电池活化检测" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="main1-step1">
+          <mxGeometry x="15" y="120" width="140" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="merge-1" value="统一时间粒度与开关标识" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="merge-layer">
-          <mxGeometry x="30" y="30" width="200" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="merge-2" value="补全缺失值/剔除异常值" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="merge-layer">
-          <mxGeometry x="280" y="30" width="200" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="merge-3" value="按开关维度建立全量数据画像" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="merge-layer">
-          <mxGeometry x="530" y="30" width="240" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="merge-4" value="自愈AI问题开关交叉验证" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="merge-layer">
-          <mxGeometry x="820" y="30" width="250" height="35" as="geometry" />
+        <mxCell id="main1-3-out" value="活化成功率 / 活化后性能" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main1-step1">
+          <mxGeometry x="165" y="120" width="200" height="35" as="geometry" />
         </mxCell>
 
-        <!-- 箭头到智能体处理层 -->
-        <mxCell id="arrow-merge-brain" edge="1" parent="1" source="merge-layer" target="brain-layer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
-          <mxGeometry relative="1" as="geometry" />
+        <!-- 1.4 定期定值比对 -->
+        <mxCell id="main1-4" value="1.4 定期定值比对检测" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="main1-step1">
+          <mxGeometry x="15" y="165" width="140" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="main1-4-out" value="定值一致性 / 压板状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main1-step1">
+          <mxGeometry x="165" y="165" width="200" height="35" as="geometry" />
         </mxCell>
 
-        <!-- ==================== 第三阶段：智能体处理层 ==================== -->
-        <mxCell id="brain-layer" value="智能体处理层（大模型驱动）" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="30" y="540" width="1140" height="350" as="geometry" />
+        <!-- 1.5 静态台账 -->
+        <mxCell id="main1-5" value="1.5 静态台账接入" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="main1-step1">
+          <mxGeometry x="420" y="30" width="140" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="main1-5-out" value="GISID / 厂家 / 投运时间 / 位置 / 责任单位" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main1-step1">
+          <mxGeometry x="420" y="75" width="175" height="50" as="geometry" />
         </mxCell>
 
-        <!-- 健康度模型 -->
-        <mxCell id="model-health" value="设备健康度检测模型" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="brain-layer">
-          <mxGeometry x="20" y="40" width="520" height="280" as="geometry" />
+        <!-- 步骤2：数据处理 -->
+        <mxCell id="main1-step2" value="步骤2：数据处理" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="main1-title">
+          <mxGeometry x="20" y="285" width="610" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="main1-2-1" value="2.1 异常记录生成" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="main1-step2">
+          <mxGeometry x="15" y="30" width="140" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="main1-2-1-out" value="按GISID汇总各维度检测结果" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="main1-step2">
+          <mxGeometry x="165" y="30" width="200" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="main1-2-2" value="2.2 数据融合" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="main1-step2">
+          <mxGeometry x="420" y="30" width="140" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="main1-2-2-out" value="运行数据 + 静态台账 → 开关运行数据画像" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="main1-step2">
+          <mxGeometry x="420" y="75" width="175" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- 存储标注 -->
+        <mxCell id="main1-storage" value="存储：达梦数据库（异常记录表）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;fontStyle=1" vertex="1" parent="main1-step2">
+          <mxGeometry x="15" y="75" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 步骤3：健康度基础分计算 -->
+        <mxCell id="main1-step3" value="步骤3：健康度基础分计算（调用人工智能平台健康度模型）" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="main1-title">
+          <mxGeometry x="20" y="420" width="610" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="main1-3-1" value="扣分规则：" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="main1-step3">
+          <mxGeometry x="15" y="30" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="main1-3-2" value="· 在线率：每低于99%扣5分" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="main1-step3">
+          <mxGeometry x="105" y="30" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="main1-3-3" value="· 遥控预置失败：每次扣3分，连续3次以上额外扣5分" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="main1-step3">
+          <mxGeometry x="105" y="50" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="main1-3-4" value="· 电池活化失败：每次扣8分" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="main1-step3">
+          <mxGeometry x="390" y="30" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="main1-3-5" value="· 定值比对不一致：每次扣5分" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="main1-step3">
+          <mxGeometry x="390" y="50" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="main1-3-6" value="· 信号误发/数据异常：每次扣2分" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="main1-step3">
+          <mxGeometry x="390" y="70" width="180" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="main1-3-out" value="输出：基础分 = 100 - Σ各维度扣分" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1;fontSize=12;" vertex="1" parent="main1-step3">
+          <mxGeometry x="15" y="75" width="250" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 主线一输出箭头 -->
+        <mxCell id="main1-output" value="输出至融合计算层" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0066CC;strokeWidth=2;fontStyle=1;fontColor=#0066CC;" edge="1" parent="1" source="main1-title" target="merge-layer">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="625" as="sourcePoint" />
+            <mxPoint x="355" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== 主线二：故障数据驱动 ==================== -->
+        
+        <!-- 主线二标题 -->
+        <mxCell id="main2-title" value="【主线二】故障数据驱动流程" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="720" y="60" width="650" height="560" as="geometry" />
+        </mxCell>
+
+        <!-- 数据来源标注 -->
+        <mxCell id="main2-source" value="数据来源：人工智能平台 + 供电能力分析系统" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="main2-title">
+          <mxGeometry x="20" y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 步骤1：数据采集 -->
+        <mxCell id="main2-step1" value="步骤1：数据采集" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="main2-title">
+          <mxGeometry x="20" y="70" width="610" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- 1.1 自愈AI智能体 -->
+        <mxCell id="main2-1" value="1.1 自愈AI智能体分析" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" vertex="1" parent="main2-step1">
+          <mxGeometry x="15" y="30" width="160" height="35" as="geometry" />
         </mxCell>
         
-        <!-- 基础指标 -->
-        <mxCell id="base-index" value="基础指标（权重分配）" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" vertex="1" parent="model-health">
-          <mxGeometry x="10" y="30" width="240" height="230" as="geometry" />
+        <mxCell id="main2-1-in1" value="输入：自愈故障记录（供电能力系统）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main2-step1">
+          <mxGeometry x="190" y="30" width="200" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="base-1" value="在线率（25%）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="base-index">
-          <mxGeometry x="10" y="30" width="100" height="25" as="geometry" />
+        <mxCell id="main2-1-in2" value="输入：拓扑数据（供电能力系统）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main2-step1">
+          <mxGeometry x="190" y="60" width="200" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="base-2" value="遥控成功率（25%）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="base-index">
-          <mxGeometry x="120" y="30" width="110" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="base-3" value="遥信/遥测数据质量（20%）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="base-index">
-          <mxGeometry x="10" y="65" width="100" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="base-4" value="电池活化成功率（15%）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="base-index">
-          <mxGeometry x="120" y="65" width="110" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="base-5" value="定值压板一致性（15%）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="base-index">
-          <mxGeometry x="10" y="100" width="100" height="25" as="geometry" />
+        <mxCell id="main2-1-in3" value="输入：关联开关遥测数据（OCS）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main2-step1">
+          <mxGeometry x="190" y="90" width="200" height="25" as="geometry" />
         </mxCell>
 
-        <!-- 修正系数 -->
-        <mxCell id="correction-factor" value="修正系数" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" vertex="1" parent="model-health">
-          <mxGeometry x="270" y="30" width="240" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-1" value="自愈线路 ×1.1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="correction-factor">
-          <mxGeometry x="10" y="30" width="100" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-2" value="联络开关 ×1.05" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="correction-factor">
-          <mxGeometry x="120" y="30" width="110" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-3" value="高故障线路 ×0.9" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="correction-factor">
-          <mxGeometry x="10" y="65" width="100" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-4" value="关键开关 ×1.15" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="correction-factor">
-          <mxGeometry x="120" y="65" width="110" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-5" value="自愈故障惩罚 ×0.7~0.85" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="correction-factor">
-          <mxGeometry x="10" y="105" width="100" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-6" value="AI预警系数 ×0.9" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="correction-factor">
-          <mxGeometry x="120" y="105" width="110" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-7" value="AI高置信度额外扣分" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="correction-factor">
-          <mxGeometry x="10" y="145" width="100" height="25" as="geometry" />
+        <mxCell id="main2-1-out" value="输出：疑似问题开关清单 / 问题类型 / 置信度 / 关联故障ID" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main2-step1">
+          <mxGeometry x="420" y="40" width="175" height="50" as="geometry" />
         </mxCell>
 
-        <!-- 健康等级 -->
-        <mxCell id="level-box" value="健康等级划分" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="brain-layer">
-          <mxGeometry x="560" y="40" width="250" height="130" as="geometry" />
+        <!-- 1.2 静态台账 -->
+        <mxCell id="main2-2" value="1.2 静态台账辅助" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="main2-step1">
+          <mxGeometry x="15" y="135" width="160" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="level-green" value="≥80分：绿灯（健康）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="level-box">
-          <mxGeometry x="15" y="30" width="220" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="level-yellow" value="60~80分：黄灯（关注）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="level-box">
-          <mxGeometry x="15" y="60" width="220" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="level-red" value="&lt;60分：红灯（严重）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="level-box">
-          <mxGeometry x="15" y="90" width="220" height="25" as="geometry" />
+        <mxCell id="main2-2-out" value="补充设备信息（厂家/投运时间/位置）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="main2-step1">
+          <mxGeometry x="190" y="135" width="200" height="35" as="geometry" />
         </mxCell>
 
-        <!-- 异常定位 -->
-        <mxCell id="location-box" value="异常精准定位（部件级+自愈关联）" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" vertex="1" parent="brain-layer">
-          <mxGeometry x="560" y="180" width="250" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="loc-1" value="通讯模块异常 → 在线率低" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="location-box">
-          <mxGeometry x="10" y="30" width="230" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="loc-2" value="电池老化 → 活化失败" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="location-box">
-          <mxGeometry x="10" y="55" width="230" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="loc-3" value="遥控机构故障 → 遥控失败" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="location-box">
-          <mxGeometry x="10" y="80" width="230" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="loc-4" value="自愈动作失败 → 拒动/定值问题" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="location-box">
-          <mxGeometry x="10" y="105" width="230" height="22" as="geometry" />
+        <!-- 步骤2：数据处理 -->
+        <mxCell id="main2-step2" value="步骤2：数据处理" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="main2-title">
+          <mxGeometry x="20" y="265" width="610" height="120" as="geometry" />
         </mxCell>
 
-        <!-- 根源分析与建议 -->
-        <mxCell id="analysis-box" value="根源分析与处置建议生成" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="brain-layer">
-          <mxGeometry x="830" y="40" width="280" height="270" as="geometry" />
+        <mxCell id="main2-2-1" value="2.1 AI标记结果存储" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="main2-step2">
+          <mxGeometry x="15" y="30" width="140" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="ana-1" value="疑似异常原因（含自愈关联）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="analysis-box">
-          <mxGeometry x="15" y="40" width="250" height="30" as="geometry" />
+        <mxCell id="main2-2-1-out" value="存储至达梦数据库（AI标记表）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="main2-step2">
+          <mxGeometry x="165" y="30" width="200" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="ana-2" value="优先级等级排序" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="analysis-box">
-          <mxGeometry x="15" y="80" width="250" height="30" as="geometry" />
+
+        <mxCell id="main2-2-2" value="2.2 数据融合" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="main2-step2">
+          <mxGeometry x="420" y="30" width="140" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="ana-3" value="处置建议" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="analysis-box">
-          <mxGeometry x="15" y="120" width="250" height="30" as="geometry" />
+        <mxCell id="main2-2-2-out" value="AI标记 + 静态台账 → 开关故障数据画像" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="main2-step2">
+          <mxGeometry x="420" y="75" width="175" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="ana-4" value="· 现场检查" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=left;" vertex="1" parent="analysis-box">
-          <mxGeometry x="25" y="160" width="110" height="25" as="geometry" />
+
+        <!-- 步骤3：修正系数生成 -->
+        <mxCell id="main2-step3" value="步骤3：修正系数生成" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" vertex="1" parent="main2-title">
+          <mxGeometry x="20" y="400" width="610" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="ana-5" value="· 更换电池/检修机构" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=left;" vertex="1" parent="analysis-box">
-          <mxGeometry x="145" y="160" width="120" height="25" as="geometry" />
+
+        <mxCell id="main2-3-rule1" value="AI标记为“疑似问题开关” → 修正系数 ×0.85" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="main2-step3">
+          <mxGeometry x="15" y="30" width="250" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ana-6" value="· 定值核对/压板调整" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=left;" vertex="1" parent="analysis-box">
-          <mxGeometry x="25" y="190" width="120" height="25" as="geometry" />
+        <mxCell id="main2-3-rule2" value="AI置信度 ≥80% → 额外扣5-10分" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="main2-step3">
+          <mxGeometry x="15" y="65" width="250" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ana-7" value="· 自愈逻辑复核" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=left;" vertex="1" parent="analysis-box">
-          <mxGeometry x="145" y="190" width="120" height="25" as="geometry" />
+        <mxCell id="main2-3-rule3" value="位于自愈线路 → 修正系数 ×1.1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="main2-step3">
+          <mxGeometry x="320" y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="main2-3-rule4" value="关键联络开关 → 修正系数 ×1.05" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="main2-step3">
+          <mxGeometry x="320" y="65" width="250" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="main2-3-out" value="输出：修正系数" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontStyle=1;fontSize=12;" vertex="1" parent="main2-step3">
+          <mxGeometry x="250" y="105" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- 主线二输出箭头 -->
+        <mxCell id="main2-output" value="输出至融合计算层" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CC0000;strokeWidth=2;fontStyle=1;fontColor=#CC0000;" edge="1" parent="1" source="main2-title" target="merge-layer">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1045" y="625" as="sourcePoint" />
+            <mxPoint x="1045" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== 融合计算层 ==================== -->
+        <mxCell id="merge-layer" value="融合计算层" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="30" y="650" width="1340" height="200" as="geometry" />
+        </mxCell>
+
+        <!-- 来自主线一 -->
+        <mxCell id="merge-input1" value="来自主线一：基础分" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" vertex="1" parent="merge-layer">
+          <mxGeometry x="100" y="30" width="250" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 来自主线二 -->
+        <mxCell id="merge-input2" value="来自主线二：修正系数" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=13;" vertex="1" parent="merge-layer">
+          <mxGeometry x="100" y="100" width="250" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 箭头到公式 -->
+        <mxCell id="merge-arrow1" edge="1" parent="merge-layer" source="merge-input1" target="merge-formula" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="merge-arrow2" edge="1" parent="merge-layer" source="merge-input2" target="merge-formula" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 计算公式 -->
+        <mxCell id="merge-formula" value="最终健康度 = 基础分 × 修正系数" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="merge-layer">
+          <mxGeometry x="500" y="55" width="300" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 等级划分 -->
+        <mxCell id="merge-level" value="健康等级划分" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="merge-layer">
+          <mxGeometry x="900" y="30" width="380" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="level-green" value="≥85分：绿灯（健康）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="merge-level">
+          <mxGeometry x="15" y="30" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="level-yellow" value="70-84分：黄灯（关注）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="merge-level">
+          <mxGeometry x="195" y="30" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="level-orange" value="60-69分：橙灯（预警）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="merge-level">
+          <mxGeometry x="15" y="65" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="level-red" value="&lt;60分：红灯（严重）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="merge-level">
+          <mxGeometry x="195" y="65" width="160" height="25" as="geometry" />
         </mxCell>
 
         <!-- 箭头到输出层 -->
-        <mxCell id="arrow-brain-output" edge="1" parent="1" source="brain-layer" target="output-layer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="merge-to-output" edge="1" parent="1" source="merge-layer" target="output-layer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0066CC;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="855" as="sourcePoint" />
+            <mxPoint x="700" y="880" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
 
-        <!-- ==================== 第四阶段：输出与服务层 ==================== -->
-        <mxCell id="output-layer" value="输出与服务层" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="30" y="940" width="1140" height="280" as="geometry" />
+        <!-- ==================== 输出层 ==================== -->
+        <mxCell id="output-layer" value="输出层" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="30" y="870" width="1340" height="280" as="geometry" />
         </mxCell>
 
-        <!-- 健康画像 -->
-        <mxCell id="output-portrait" value="设备“健康画像”&#xa;（一终端一画像）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="output-layer">
-          <mxGeometry x="20" y="40" width="180" height="60" as="geometry" />
+        <!-- 输出1：数据存储 -->
+        <mxCell id="output1" value="输出1：数据存储（达梦数据库）" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="output-layer">
+          <mxGeometry x="20" y="30" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="output1-1" value="健康度评分表" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="output1">
+          <mxGeometry x="15" y="40" width="170" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="output1-2" value="AI标记表" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="output1">
+          <mxGeometry x="210" y="40" width="170" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="output1-3" value="异常记录表" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="output1">
+          <mxGeometry x="15" y="90" width="170" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="output1-4" value="推送记录表" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="output1">
+          <mxGeometry x="210" y="90" width="170" height="35" as="geometry" />
         </mxCell>
 
-        <!-- 预警推送 -->
-        <mxCell id="output-warning" value="健康隐患自动推送预警" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="output-layer">
-          <mxGeometry x="230" y="40" width="200" height="60" as="geometry" />
+        <!-- 输出2：缺陷单推送 -->
+        <mxCell id="output2" value="输出2：缺陷单推送" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="output-layer">
+          <mxGeometry x="450" y="30" width="400" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="output-warning-detail" value="匹配责任单位/运维人员&#xa;隐患等级/疑似原因/处置动作" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="output-layer">
-          <mxGeometry x="230" y="100" width="200" height="40" as="geometry" />
+        <mxCell id="output2-trigger" value="触发条件：健康度 &lt; 60分（红灯）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="output2">
+          <mxGeometry x="15" y="40" width="250" height="35" as="geometry" />
         </mxCell>
-
-        <!-- 日报 -->
-        <mxCell id="output-daily" value="标准化运行工况日报" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="output-layer">
-          <mxGeometry x="470" y="40" width="180" height="60" as="geometry" />
+        <mxCell id="output2-target" value="推送目标：OMS系统" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="output2">
+          <mxGeometry x="15" y="85" width="250" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="output-daily-detail" value="健康度明细/隐患统计&#xa;AI标记专项统计/处置进度" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="output-layer">
-          <mxGeometry x="470" y="100" width="180" height="40" as="geometry" />
+        <mxCell id="output2-notify" value="同步通知：Elink / 短信" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="output2">
+          <mxGeometry x="15" y="130" width="250" height="35" as="geometry" />
         </mxCell>
 
-        <!-- 体检报告 -->
-        <mxCell id="output-report" value="健康监测“体检报告”&#xa;（周/月）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="output-layer">
-          <mxGeometry x="690" y="40" width="180" height="60" as="geometry" />
+        <!-- 输出3：供电能力分析系统集成 -->
+        <mxCell id="output3" value="输出3：供电能力分析系统集成" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="output-layer">
+          <mxGeometry x="880" y="30" width="430" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="output-report-detail" value="健康度分布/红灯黄灯清单&#xa;AI问题开关验证/优化建议" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="output-layer">
-          <mxGeometry x="690" y="100" width="180" height="40" as="geometry" />
+        <mxCell id="output3-1" value="自愈故障页面嵌入式提醒" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="output3">
+          <mxGeometry x="15" y="40" width="190" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="output3-1-detail" value="展示关联开关健康度 / AI标记 / 一键推送" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="output3">
+          <mxGeometry x="15" y="80" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="output3-2" value="运维计划优化报表" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="output3">
+          <mxGeometry x="230" y="40" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="output3-2-detail" value="按线路/区域/厂家统计 / 优化建议" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="output3">
+          <mxGeometry x="230" y="80" width="180" height="40" as="geometry" />
         </mxCell>
 
         <!-- 闭环管理 -->
-        <mxCell id="output-close" value="闭环管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="output-layer">
-          <mxGeometry x="910" y="40" width="180" height="60" as="geometry" />
+        <mxCell id="output4" value="闭环管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="output-layer">
+          <mxGeometry x="880" y="130" width="430" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="output-close-detail" value="推送OMS工单&#xa;跟踪处置状态&#xa;AI反馈闭环" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="output-layer">
-          <mxGeometry x="910" y="100" width="180" height="50" as="geometry" />
-        </mxCell>
-
-        <!-- 推送渠道标注 -->
-        <mxCell id="channel-box" value="推送渠道：Elink / 短信 / OMS工单系统" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="output-layer">
-          <mxGeometry x="230" y="170" width="650" height="30" as="geometry" />
+        <mxCell id="output4-detail" value="跟踪OMS缺陷单处置状态 → 处置结果回写 → 反馈至人工智能平台（模型优化）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="output-layer">
+          <mxGeometry x="880" y="185" width="430" height="30" as="geometry" />
         </mxCell>
 
-        <!-- ==================== 第五阶段：全生命周期管理标注 ==================== -->
-        <mxCell id="lifecycle" value="全生命周期管理视角" style="swimlane;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontStyle=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="30" y="1260" width="1140" height="120" as="geometry" />
+        <!-- ==================== 图例 ==================== -->
+        <mxCell id="legend" value="图例" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1180" width="400" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="life-1" value="投运初期（0-3年）&#xa;安装质量/通讯稳定性" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="lifecycle">
-          <mxGeometry x="20" y="35" width="180" height="60" as="geometry" />
+        <mxCell id="legend1" value="OCS系统" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="legend">
+          <mxGeometry x="15" y="30" width="80" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="life-2" value="稳定运行期（4-10年）&#xa;遥控成功率/电池健康" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="lifecycle">
-          <mxGeometry x="240" y="35" width="180" height="60" as="geometry" />
+        <mxCell id="legend2" value="人工智能平台" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="legend">
+          <mxGeometry x="110" y="30" width="90" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="life-3" value="老化期（10年以上）&#xa;故障频率/更换计划" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="lifecycle">
-          <mxGeometry x="460" y="35" width="180" height="60" as="geometry" />
+        <mxCell id="legend3" value="供电能力分析系统" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="legend">
+          <mxGeometry x="215" y="30" width="110" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="life-4" value="自愈/关键位置开关&#xa;提高健康度要求/缩短巡检周期" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="lifecycle">
-          <mxGeometry x="680" y="35" width="220" height="60" as="geometry" />
+        <mxCell id="legend4" value="OMS系统" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="legend">
+          <mxGeometry x="340" y="30" width="50" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="life-5" value="AI标记问题开关&#xa;持续跟踪/专项治理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="lifecycle">
-          <mxGeometry x="940" y="35" width="170" height="60" as="geometry" />
-        </mxCell>
-
-        <!-- 开始结束节点 -->
-        <mxCell id="start" value="开始" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="530" y="25" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow-start" edge="1" parent="1" source="start" target="swim-ocs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow-start-fault" edge="1" parent="1" source="start" target="swim-fault" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow-start-ai" edge="1" parent="1" source="start" target="swim-ai-pre" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="end" value="结束" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="530" y="1420" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow-end" edge="1" parent="1" source="lifecycle" target="end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="legend5" value="达梦数据库" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="legend">
+          <mxGeometry x="15" y="65" width="80" height="25" as="geometry" />
         </mxCell>
 
       </root>
