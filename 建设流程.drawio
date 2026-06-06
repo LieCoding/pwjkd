@@ -1,0 +1,289 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="开关健康度评估系统" id="AAI1UVjUyZYLxQUxNIa7">
+    <mxGraphModel dx="1071" dy="1762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-51" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" value="配网自动化智能诊断云脑应用 —— 建设流程" vertex="1">
+          <mxGeometry height="40" width="500" x="340" y="-60" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-52" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="运行数据（OCS调度自动化系统）" vertex="1">
+          <mxGeometry height="210" width="360" x="70" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-53" parent="6uFDXsT8nDtFIgyEYtcV-52" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="遥信/遥测信号" vertex="1">
+          <mxGeometry height="30" width="140" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-54" parent="6uFDXsT8nDtFIgyEYtcV-52" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="远程电池活化信号" vertex="1">
+          <mxGeometry height="30" width="140" x="190" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-55" parent="6uFDXsT8nDtFIgyEYtcV-52" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="定值压板信号" vertex="1">
+          <mxGeometry height="30" width="140" x="20" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-56" parent="6uFDXsT8nDtFIgyEYtcV-52" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="终端在线状态" vertex="1">
+          <mxGeometry height="30" width="140" x="190" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-57" parent="6uFDXsT8nDtFIgyEYtcV-52" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="遥控操作记录" vertex="1">
+          <mxGeometry height="30" width="140" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-58" parent="6uFDXsT8nDtFIgyEYtcV-52" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="信号误发/数据异常" vertex="1">
+          <mxGeometry height="30" width="140" x="190" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-59" parent="6uFDXsT8nDtFIgyEYtcV-52" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="SOE事件顺序记录" vertex="1">
+          <mxGeometry height="30" width="140" x="20" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-143" parent="6uFDXsT8nDtFIgyEYtcV-52" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="线路拓扑数据" vertex="1">
+          <mxGeometry height="30" width="140" x="190" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-60" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;" value="故障/缺陷数据（OCS + OMS + 配网供电能力分析系统）" vertex="1">
+          <mxGeometry height="200" width="380" x="460" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-61" parent="6uFDXsT8nDtFIgyEYtcV-60" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="OCS：开关自身故障记录" vertex="1">
+          <mxGeometry height="30" width="160" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-62" parent="6uFDXsT8nDtFIgyEYtcV-60" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="OMS：缺陷工单/检修记录/跳闸" vertex="1">
+          <mxGeometry height="30" width="160" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-63" parent="6uFDXsT8nDtFIgyEYtcV-60" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配网供电能力：自愈线路标识" vertex="1">
+          <mxGeometry height="30" width="160" x="20" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-64" parent="6uFDXsT8nDtFIgyEYtcV-60" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配网供电能力：自愈故障信息" vertex="1">
+          <mxGeometry height="30" width="160" x="200" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-65" parent="6uFDXsT8nDtFIgyEYtcV-60" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="高故障线路/关键联络标识" vertex="1">
+          <mxGeometry height="30" width="160" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-66" parent="6uFDXsT8nDtFIgyEYtcV-60" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="供电能力受限关键开关" vertex="1">
+          <mxGeometry height="30" width="160" x="200" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-67" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" value="智能体前置分析（配网自愈AI智能分析智能体）" vertex="1">
+          <mxGeometry height="200" width="340" x="870" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-68" parent="6uFDXsT8nDtFIgyEYtcV-67" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="可能存在问题的开关清单" vertex="1">
+          <mxGeometry height="30" width="280" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-69" parent="6uFDXsT8nDtFIgyEYtcV-67" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="疑似问题类型（拒动/通讯延迟/定值不匹配）" vertex="1">
+          <mxGeometry height="30" width="280" x="20" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-70" parent="6uFDXsT8nDtFIgyEYtcV-67" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="置信度评分 + 关联自愈故障事件ID" vertex="1">
+          <mxGeometry height="30" width="280" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-71" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;" value="静态台账（OCS三区历史库）" vertex="1">
+          <mxGeometry height="80" width="1140" x="70" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-72" parent="6uFDXsT8nDtFIgyEYtcV-71" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="设备GISID / 厂家 / 型号" vertex="1">
+          <mxGeometry height="30" width="200" x="30" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-73" parent="6uFDXsT8nDtFIgyEYtcV-71" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="投运日期 / 设计寿命" vertex="1">
+          <mxGeometry height="30" width="180" x="260" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-74" parent="6uFDXsT8nDtFIgyEYtcV-71" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="所属变电站 / 线路 / 区域" vertex="1">
+          <mxGeometry height="30" width="200" x="470" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-75" parent="6uFDXsT8nDtFIgyEYtcV-71" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="责任单位" vertex="1">
+          <mxGeometry height="30" width="150" x="700" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-76" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;" target="6uFDXsT8nDtFIgyEYtcV-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-77" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6uFDXsT8nDtFIgyEYtcV-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-78" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.7;entryY=0;entryDx=0;entryDy=0;" target="6uFDXsT8nDtFIgyEYtcV-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-79" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6uFDXsT8nDtFIgyEYtcV-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-80" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" value="数据融合与清洗" vertex="1">
+          <mxGeometry height="80" width="1140" x="70" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-81" parent="6uFDXsT8nDtFIgyEYtcV-80" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" value="统一时间粒度与开关标识" vertex="1">
+          <mxGeometry height="35" width="200" x="30" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-82" parent="6uFDXsT8nDtFIgyEYtcV-80" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" value="补全缺失值/剔除异常值" vertex="1">
+          <mxGeometry height="35" width="200" x="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-83" parent="6uFDXsT8nDtFIgyEYtcV-80" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" value="按开关维度建立全量数据画像" vertex="1">
+          <mxGeometry height="35" width="240" x="530" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-84" parent="6uFDXsT8nDtFIgyEYtcV-80" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" value="自愈AI问题开关交叉验证" vertex="1">
+          <mxGeometry height="35" width="250" x="820" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-85" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6uFDXsT8nDtFIgyEYtcV-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-86" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" value="智能体处理层（大模型驱动）" vertex="1">
+          <mxGeometry height="350" width="1140" x="70" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-87" parent="6uFDXsT8nDtFIgyEYtcV-86" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="设备健康度检测模型" vertex="1">
+          <mxGeometry height="280" width="520" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-88" parent="6uFDXsT8nDtFIgyEYtcV-87" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" value="基础指标（权重分配）" vertex="1">
+          <mxGeometry height="230" width="240" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-89" parent="6uFDXsT8nDtFIgyEYtcV-88" style="rounded=0;whiteSpace=wrap;html=1;" value="在线率（25%）" vertex="1">
+          <mxGeometry height="25" width="100" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-90" parent="6uFDXsT8nDtFIgyEYtcV-88" style="rounded=0;whiteSpace=wrap;html=1;" value="遥控成功率（25%）" vertex="1">
+          <mxGeometry height="25" width="110" x="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-91" parent="6uFDXsT8nDtFIgyEYtcV-88" style="rounded=0;whiteSpace=wrap;html=1;" value="遥信/遥测数据质量（20%）" vertex="1">
+          <mxGeometry height="25" width="100" x="10" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-92" parent="6uFDXsT8nDtFIgyEYtcV-88" style="rounded=0;whiteSpace=wrap;html=1;" value="电池活化成功率（15%）" vertex="1">
+          <mxGeometry height="25" width="110" x="120" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-93" parent="6uFDXsT8nDtFIgyEYtcV-88" style="rounded=0;whiteSpace=wrap;html=1;" value="定值压板一致性（15%）" vertex="1">
+          <mxGeometry height="25" width="100" x="10" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-94" parent="6uFDXsT8nDtFIgyEYtcV-87" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" value="修正系数" vertex="1">
+          <mxGeometry height="230" width="240" x="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-95" parent="6uFDXsT8nDtFIgyEYtcV-94" style="rounded=0;whiteSpace=wrap;html=1;" value="自愈线路 ×1.1" vertex="1">
+          <mxGeometry height="25" width="100" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-96" parent="6uFDXsT8nDtFIgyEYtcV-94" style="rounded=0;whiteSpace=wrap;html=1;" value="联络开关 ×1.05" vertex="1">
+          <mxGeometry height="25" width="110" x="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-97" parent="6uFDXsT8nDtFIgyEYtcV-94" style="rounded=0;whiteSpace=wrap;html=1;" value="高故障线路 ×0.9" vertex="1">
+          <mxGeometry height="25" width="100" x="10" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-98" parent="6uFDXsT8nDtFIgyEYtcV-94" style="rounded=0;whiteSpace=wrap;html=1;" value="关键开关 ×1.15" vertex="1">
+          <mxGeometry height="25" width="110" x="120" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-99" parent="6uFDXsT8nDtFIgyEYtcV-94" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" value="自愈故障惩罚 ×0.7~0.85" vertex="1">
+          <mxGeometry height="25" width="100" x="10" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-100" parent="6uFDXsT8nDtFIgyEYtcV-94" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" value="AI预警系数 ×0.9" vertex="1">
+          <mxGeometry height="25" width="110" x="120" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-101" parent="6uFDXsT8nDtFIgyEYtcV-94" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" value="AI高置信度额外扣分" vertex="1">
+          <mxGeometry height="25" width="100" x="10" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-102" parent="6uFDXsT8nDtFIgyEYtcV-86" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="健康等级划分" vertex="1">
+          <mxGeometry height="130" width="250" x="560" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-103" parent="6uFDXsT8nDtFIgyEYtcV-102" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="≥80分：绿灯（健康）" vertex="1">
+          <mxGeometry height="25" width="220" x="15" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-104" parent="6uFDXsT8nDtFIgyEYtcV-102" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="60~80分：黄灯（关注）" vertex="1">
+          <mxGeometry height="25" width="220" x="15" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-105" parent="6uFDXsT8nDtFIgyEYtcV-102" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;60分：红灯（严重）" vertex="1">
+          <mxGeometry height="25" width="220" x="15" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-106" parent="6uFDXsT8nDtFIgyEYtcV-86" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" value="异常精准定位（部件级+自愈关联）" vertex="1">
+          <mxGeometry height="130" width="250" x="560" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-107" parent="6uFDXsT8nDtFIgyEYtcV-106" style="rounded=0;whiteSpace=wrap;html=1;" value="通讯模块异常 → 在线率低" vertex="1">
+          <mxGeometry height="22" width="230" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-108" parent="6uFDXsT8nDtFIgyEYtcV-106" style="rounded=0;whiteSpace=wrap;html=1;" value="电池老化 → 活化失败" vertex="1">
+          <mxGeometry height="22" width="230" x="10" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-109" parent="6uFDXsT8nDtFIgyEYtcV-106" style="rounded=0;whiteSpace=wrap;html=1;" value="遥控机构故障 → 遥控失败" vertex="1">
+          <mxGeometry height="22" width="230" x="10" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-110" parent="6uFDXsT8nDtFIgyEYtcV-106" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" value="自愈动作失败 → 拒动/定值问题" vertex="1">
+          <mxGeometry height="22" width="230" x="10" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-111" parent="6uFDXsT8nDtFIgyEYtcV-86" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="根源分析与处置建议生成" vertex="1">
+          <mxGeometry height="270" width="280" x="830" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-112" parent="6uFDXsT8nDtFIgyEYtcV-111" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="疑似异常原因（含自愈关联）" vertex="1">
+          <mxGeometry height="30" width="250" x="15" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-113" parent="6uFDXsT8nDtFIgyEYtcV-111" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="优先级等级排序" vertex="1">
+          <mxGeometry height="30" width="250" x="15" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-114" parent="6uFDXsT8nDtFIgyEYtcV-111" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="处置建议" vertex="1">
+          <mxGeometry height="30" width="250" x="15" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-115" parent="6uFDXsT8nDtFIgyEYtcV-111" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=left;" value="· 现场检查" vertex="1">
+          <mxGeometry height="25" width="110" x="25" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-116" parent="6uFDXsT8nDtFIgyEYtcV-111" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=left;" value="· 更换电池/检修机构" vertex="1">
+          <mxGeometry height="25" width="120" x="145" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-117" parent="6uFDXsT8nDtFIgyEYtcV-111" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=left;" value="· 定值核对/压板调整" vertex="1">
+          <mxGeometry height="25" width="120" x="25" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-118" parent="6uFDXsT8nDtFIgyEYtcV-111" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=left;" value="· 自愈逻辑复核" vertex="1">
+          <mxGeometry height="25" width="120" x="145" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-119" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6uFDXsT8nDtFIgyEYtcV-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-120" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;" value="输出与服务层" vertex="1">
+          <mxGeometry height="280" width="1140" x="70" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-121" parent="6uFDXsT8nDtFIgyEYtcV-120" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="设备“健康画像”&#xa;（一终端一画像）" vertex="1">
+          <mxGeometry height="60" width="180" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-122" parent="6uFDXsT8nDtFIgyEYtcV-120" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="健康隐患自动推送预警" vertex="1">
+          <mxGeometry height="60" width="200" x="230" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-123" parent="6uFDXsT8nDtFIgyEYtcV-120" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="匹配责任单位/运维人员&#xa;隐患等级/疑似原因/处置动作" vertex="1">
+          <mxGeometry height="40" width="200" x="230" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-124" parent="6uFDXsT8nDtFIgyEYtcV-120" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="标准化运行工况日报" vertex="1">
+          <mxGeometry height="60" width="180" x="470" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-125" parent="6uFDXsT8nDtFIgyEYtcV-120" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="健康度明细/隐患统计&#xa;AI标记专项统计/处置进度" vertex="1">
+          <mxGeometry height="40" width="180" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-126" parent="6uFDXsT8nDtFIgyEYtcV-120" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="健康监测“体检报告”&#xa;（周/月）" vertex="1">
+          <mxGeometry height="60" width="180" x="690" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-127" parent="6uFDXsT8nDtFIgyEYtcV-120" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="健康度分布/红灯黄灯清单&#xa;AI问题开关验证/优化建议" vertex="1">
+          <mxGeometry height="40" width="180" x="690" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-128" parent="6uFDXsT8nDtFIgyEYtcV-120" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="闭环管理" vertex="1">
+          <mxGeometry height="60" width="180" x="910" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-129" parent="6uFDXsT8nDtFIgyEYtcV-120" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="推送OMS工单&#xa;跟踪处置状态&#xa;AI反馈闭环" vertex="1">
+          <mxGeometry height="50" width="180" x="910" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-130" parent="6uFDXsT8nDtFIgyEYtcV-120" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="推送渠道：Elink / 短信 / OMS工单系统" vertex="1">
+          <mxGeometry height="30" width="650" x="230" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-131" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontStyle=1;fontSize=14;" value="全生命周期管理视角" vertex="1">
+          <mxGeometry height="120" width="1140" x="70" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-132" parent="6uFDXsT8nDtFIgyEYtcV-131" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="投运初期（0-3年）&#xa;安装质量/通讯稳定性" vertex="1">
+          <mxGeometry height="60" width="180" x="20" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-133" parent="6uFDXsT8nDtFIgyEYtcV-131" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="稳定运行期（4-10年）&#xa;遥控成功率/电池健康" vertex="1">
+          <mxGeometry height="60" width="180" x="240" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-134" parent="6uFDXsT8nDtFIgyEYtcV-131" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="老化期（10年以上）&#xa;故障频率/更换计划" vertex="1">
+          <mxGeometry height="60" width="180" x="460" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-135" parent="6uFDXsT8nDtFIgyEYtcV-131" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="自愈/关键位置开关&#xa;提高健康度要求/缩短巡检周期" vertex="1">
+          <mxGeometry height="60" width="220" x="680" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-136" parent="6uFDXsT8nDtFIgyEYtcV-131" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;" value="AI标记问题开关&#xa;持续跟踪/专项治理" vertex="1">
+          <mxGeometry height="60" width="170" x="940" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-137" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="开始" vertex="1">
+          <mxGeometry height="40" width="80" x="610" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-138" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6uFDXsT8nDtFIgyEYtcV-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-139" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6uFDXsT8nDtFIgyEYtcV-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-140" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6uFDXsT8nDtFIgyEYtcV-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-141" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="结束" vertex="1">
+          <mxGeometry height="40" width="80" x="570" y="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="6uFDXsT8nDtFIgyEYtcV-142" edge="1" parent="1" source="6uFDXsT8nDtFIgyEYtcV-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6uFDXsT8nDtFIgyEYtcV-141">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
