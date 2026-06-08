@@ -81,11 +81,11 @@
         <mxCell id="alert-red-action" parent="alert-level" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="自动推送缺陷单至OMS" vertex="1">
           <mxGeometry height="25" width="180" x="20" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="alert-yellow-action" parent="alert-level" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="纳入巡检计划，不自动推送" vertex="1">
-          <mxGeometry height="25" width="180" x="220" y="80" as="geometry" />
+        <mxCell id="alert-yellow-action" parent="alert-level" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="纳入巡检计划，不推送" vertex="1">
+          <mxGeometry height="25" width="180" x="195" y="80" as="geometry" />
         </mxCell>
         <mxCell id="alert-green-action" parent="alert-level" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="继续监控，不推送" vertex="1">
-          <mxGeometry height="25" width="180" x="420" y="80" as="geometry" />
+          <mxGeometry height="25" width="180" x="355" y="80" as="geometry" />
         </mxCell>
         <mxCell id="V9SloNpvtJ3q1PKCPm2E-41" edge="1" parent="1" source="plan-optimize" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="V9SloNpvtJ3q1PKCPm2E-16">
           <mxGeometry relative="1" as="geometry" />
