@@ -93,7 +93,7 @@
         <mxCell id="plan-optimize" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;" value="消缺计划优化" vertex="1">
           <mxGeometry height="123" width="530" x="620" y="344" as="geometry" />
         </mxCell>
-        <mxCell id="plan-1" parent="plan-optimize" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="按线路聚合" vertex="1">
+        <mxCell id="plan-1" parent="plan-optimize" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="AI智能分析" vertex="1">
           <mxGeometry height="30" width="73" x="30" y="35" as="geometry" />
         </mxCell>
         <mxCell id="plan-2" parent="plan-optimize" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="按等级排序" vertex="1">
@@ -102,7 +102,7 @@
         <mxCell id="plan-3" parent="plan-optimize" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="按设备重要性" vertex="1">
           <mxGeometry height="30" width="78" x="228" y="35" as="geometry" />
         </mxCell>
-        <mxCell id="plan-4" parent="plan-optimize" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="按地理位置" vertex="1">
+        <mxCell id="plan-4" parent="plan-optimize" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="按线路聚合" vertex="1">
           <mxGeometry height="30" width="78" x="328" y="35" as="geometry" />
         </mxCell>
         <mxCell id="plan-5" parent="plan-optimize" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="按缺陷类型" vertex="1">
