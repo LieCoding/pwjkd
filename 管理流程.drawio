@@ -16,8 +16,11 @@
         <mxCell id="FsC-gOAK4bT4nnmvt9M_-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="OMS终端缺陷管理模块" vertex="1">
           <mxGeometry height="60" width="120" x="160" y="310" as="geometry" />
         </mxCell>
+        <mxCell id="REswMk6K9a6nZJkITyPW-2" edge="1" parent="1" source="FsC-gOAK4bT4nnmvt9M_-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="REswMk6K9a6nZJkITyPW-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="FsC-gOAK4bT4nnmvt9M_-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="运维单位处理" vertex="1">
-          <mxGeometry height="60" width="120" x="60" y="610" as="geometry" />
+          <mxGeometry height="60" width="120" x="60" y="600" as="geometry" />
         </mxCell>
         <mxCell id="FsC-gOAK4bT4nnmvt9M_-8" edge="1" parent="1" source="FsC-gOAK4bT4nnmvt9M_-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="FsC-gOAK4bT4nnmvt9M_-4">
           <mxGeometry relative="1" as="geometry" />
@@ -30,6 +33,24 @@
         </mxCell>
         <mxCell id="FsC-gOAK4bT4nnmvt9M_-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="运维单位签收" vertex="1">
           <mxGeometry height="60" width="120" x="160" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="REswMk6K9a6nZJkITyPW-4" edge="1" parent="1" source="REswMk6K9a6nZJkITyPW-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="REswMk6K9a6nZJkITyPW-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="REswMk6K9a6nZJkITyPW-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="主站复核" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="REswMk6K9a6nZJkITyPW-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="归档" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="REswMk6K9a6nZJkITyPW-7" edge="1" parent="1" source="REswMk6K9a6nZJkITyPW-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="REswMk6K9a6nZJkITyPW-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="REswMk6K9a6nZJkITyPW-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="推送电网管理平台缺陷管理模块消缺" vertex="1">
+          <mxGeometry height="60" width="120" x="294" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="REswMk6K9a6nZJkITyPW-6" edge="1" parent="1" source="FsC-gOAK4bT4nnmvt9M_-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="REswMk6K9a6nZJkITyPW-5">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
